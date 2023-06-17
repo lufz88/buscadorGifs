@@ -1,4 +1,4 @@
-#Buscador de Gifs
+# Buscador de Gifs
 
 Este es un proyecto sencillo de buscador de gifs con HTML, Css y JavaScript, utilizando la API de Giphy.
 
