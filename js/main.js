@@ -4,13 +4,13 @@ const searchUrl = 'http://api.giphy.com/v1/gifs/search';
 const gifContainer = document.querySelector('#gif-container');
 const searchInput = document.querySelector('#search-input');
 
-searchInput.addEventListener('change', event => {
+searchInput.addEventListener('input', event => {
 	searchValue = event.target.value;
-	if (searchValue === '') {
+	if (searchValue) {
+		showSearchResult(searchValue);
+	} else {
 		gifContainer.innerHTML = '';
 		showGifs();
-	} else {
-		showSearchResult(searchValue);
 	}
 });
 
