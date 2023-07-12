@@ -9,7 +9,7 @@ let gifs;
 searchInput.addEventListener('input', event => {
 	searchValue = event.target.value;
 
-	showSearchResult(searchValue);
+	showGifs(searchValue);
 });
 
 async function showGifs(searchValue) {
